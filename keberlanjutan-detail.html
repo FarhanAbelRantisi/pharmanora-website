@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="detail-title">Detail Kegiatan - Pharmanora</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .image-gallery {
+            display: flex;
+            gap: 15px;
+            margin: 20px 0;
+            flex-wrap: wrap;
+        }
+        .image-gallery img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <a href="keberlanjutan.html" class="button secondary" style="margin-top: 0;">&larr; Kembali ke Daftar Kegiatan</a>
+
+        <h1 id="activity-title-heading">Memuat Detail Kegiatan...</h1>
+
+        <div class="image-gallery" id="activity-gallery">
+            </div>
+        
+        <section id="activity-description-section">
+            <h2>Deskripsi Kegiatan</h2>
+            <p id="activity-description">Deskripsi sedang dimuat.</p>
+        </section>
+
+    </main>
+
+    <script src="js/data.js"></script>
+    <script src="js/detail-keberlanjutan.js"></script>
+</body>
+</html>

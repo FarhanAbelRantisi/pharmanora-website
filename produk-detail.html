@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="detail-title">Detail Produk - Pharmanora</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main>
+        <a href="produk.html" class="button secondary" style="margin-top: 0;">&larr; Kembali ke Daftar Produk</a>
+
+        <h1 id="product-name-heading">Memuat Detail Produk...</h1>
+
+        <div class="product-detail-container">
+            <div class="product-detail-image">
+                <img id="product-image" src="" alt="Gambar Produk">
+            </div>
+            
+            <div class="product-detail-info">
+                <h2>Spesifikasi Produk</h2>
+                <div class="detail-specs">
+                    <p><strong>Kategori:</strong> <span id="product-kategori"></span></p>
+                    <p><strong>Netto:</strong> <span id="product-netto"></span></p>
+                    <p><strong>Kandungan Sediaan:</strong> <span id="product-kandungan"></span></p>
+                </div>
+
+                <h2>Deskripsi Obat</h2>
+                <p id="product-description">Deskripsi obat sedang dimuat.</p>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/data.js"></script>
+    <script src="js/detail.js"></script>
+</body>
+</html>
