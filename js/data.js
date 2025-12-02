@@ -59,7 +59,7 @@ const productsData = {
         {
             id: 'resep-2',
             name: 'Krim Ketokonazol',
-            image: 'krim_ketokonazol.png',
+            image: 'Krim_ketokonazol.png',
             netto: '10 gram',
             kandungan: 'Ketokonazol 20 mg',
             kategori: 'Obat Resep Bermerk dan Generik',
@@ -189,22 +189,22 @@ const csrActivities = [
     {
         id: 'csr-1',
         title: 'Sekolah Gizi Seimbang bersama Pharmanora',
-        mainImage: 'kegiatan1.jpg', // Gambar yang ditampilkan di halaman daftar
-        detailImages: ['kegiatan1.2.jpg', 'kegiatan1.3.jpg'], // Gambar pendukung
+        mainImage: 'kegiatan1.JPG', // Gambar yang ditampilkan di halaman daftar
+        detailImages: ['kegiatan1.2.JPG', 'kegiatan1.3.JPG'], // Gambar pendukung
         description: 'Sekolah Gizi Seimbang bersama Pharmanora Adalah kegiatan edukasi di TK sekitar Palembang yang diselenggarakan oleh Pharmanora untuk memperkenalkan konsep gizi seimbang dan kebiasaan makan sehat sejak dini. Tim Pharmanora bersama tenaga kesehatan memberikan penyuluhan sederhana tentang isi piring seimbang, pentingnya sarapan, dan memilih jajanan yang aman. Edukasi dikemas melalui permainan, poster bergambar, dan booklet yang memuat informasi gizi sekaligus edukasi konsumsi obat yang baik pada anak.'
     },
     {
         id: 'csr-2',
         title: 'Gerakan Lansia Aktif dan Sehat bersama Pharmanora',
-        mainImage: 'kegiatan2.jpg',
-        detailImages: ['kegiatan2.2.jpg', 'kegiatan2.3.jpg'],
+        mainImage: 'kegiatan2.JPG',
+        detailImages: ['kegiatan2.2.JPG', 'kegiatan2.3.JPG'],
         description: 'Kegiatan komunitas yang menggabungkan cek kesehatan dengan edukasi dan aktivitas fisik ringan untuk lansia. Kegiatan dimulai dengan pemeriksaan kesehatan dasar, meliputi pengukuran tekanan darah, nadi, berat badan, serta pemeriksaan gula darah dan kolesterol menggunakan strip test. Setelah pemeriksaan, lansia diajak mengikuti senam lansia ringan dan sesi edukasi mengenai pola hidup sehat pada usia lanjut. Pharmanora berperan menyediakan fasilitas pemeriksaan (termasuk alat dan strip test), materi edukasi, serta informasi mengenai penggunaan obat dan suplemen yang sesuai dan aman untuk lansia.'
     },
     {
         id: 'csr-3',
         title: 'Eco Desa Sehat bersama Pharmanora',
-        mainImage: 'kegiatan3.jpg',
-        detailImages: ['kegiatan3.2.jpg', 'kegiatan3.3.jpg'],
+        mainImage: 'kegiatan3.JPG',
+        detailImages: ['kegiatan3.2.JPG', 'kegiatan3.3.JPG'],
         description: 'Program komunitas untuk mengajak warga desa menerapkan hidup sehat dan ramah lingkungan. Kegiatan mencakup edukasi pengelolaan sampah, pembuatan taman toga, dan sosialisasi penggunaan obat yang aman. Pharmanora mendukung dengan penyediaan materi edukasi, pendampingan sederhana, serta informasi kesehatan yang tepat bagi masyarakat desa.'
     }
 ];
