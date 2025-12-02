@@ -23,20 +23,19 @@
     <header>
         <nav class="navbar">
             <div class="logo">
-                <img src="img/logo_pharmanora.jpg" alt="Logo Pharmanora" height="60">
+            <img src="img/logo_pharmanora.jpg" alt="Logo Pharmanora" height="60">
             </div>
 
-            <!-- Hamburger Button -->
-            <button class="menu-toggle" id="menu-toggle">
-                &#9776; <!-- icon hamburger -->
+            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation">
+            &#9776;
             </button>
 
             <ul class="nav-links" id="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="produk.html">Produk</a></li>
-                <li><a href="keberlanjutan.html">Keberlanjutan</a></li>
-                <li><a href="tentang.html">Tentang</a></li>
-                <li><a href="kontak.html">Kontak</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="produk.html">Produk</a></li>
+            <li><a href="keberlanjutan.html">Keberlanjutan</a></li>
+            <li><a href="tentang.html">Tentang</a></li>
+            <li><a href="kontak.html">Kontak</a></li>
             </ul>
         </nav>
     </header>
@@ -53,5 +52,15 @@
 
     <script src="js/data.js"></script>
     <script src="js/keberlanjutan.js"></script>
+    <script>
+        const menuToggle = document.getElementById("menu-toggle");
+        const navLinks = document.getElementById("nav-links");
+
+        if (menuToggle && navLinks) {
+            menuToggle.addEventListener("click", () => {
+            navLinks.classList.toggle("show");
+            });
+        }
+    </script>
 </body>
 </html>

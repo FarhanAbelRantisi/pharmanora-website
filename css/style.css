@@ -816,77 +816,53 @@ footer {
 
 /* Responsif */
 @media (max-width: 768px) {
-    .kontak-main {
-        margin-top: 90px;
-        padding-inline: 16px;
-    }
-
-    .kontak-card {
-        flex: 0 0 100%;
-        max-width: 360px;
-    }
-    .map-location-wrapper {
-        padding-inline: 8px;
-    }
-
+    /* Navbar tetap fixed, hanya padding diperkecil */
     .navbar {
-        padding: 10px 20px;
-        flex-direction: row;
-        justify-content: space-between;
+        padding: 8px 16px;
     }
 
+    /* Tampilkan tombol hamburger di mobile */
     .menu-toggle {
         display: block;
+        background: none;
+        border: none;
+        font-size: 28px;
+        cursor: pointer;
+        color: var(--text-dark);
+        margin-left: auto; /* dorong ke kanan */
+        z-index: 1001;
     }
 
+    /* Sembunyikan link default, nanti dibuka via .show */
     .nav-links {
-        display: none;               /* default: hidden */
+        position: fixed;
+        top: 60px;               /* sedikit di bawah navbar */
+        left: 0;
+        right: 0;
+        display: none;
         flex-direction: column;
-        width: 100%;
-        background: white;
-        padding: 10px 0;
-        border-top: 1px solid #ccc;
+        background: #ffffff;
+        border-top: 1px solid #ddd;
+        z-index: 1000;
+        padding: 8px 0;
     }
 
     .nav-links.show {
-        display: flex;               /* muncul setelah toggle */
+        display: flex;
+    }
+
+    .nav-links li {
+        width: 100%;
     }
 
     .nav-links li a {
         padding: 12px 20px;
-        text-align: left;
-        width: 100%;
         display: block;
-        border-bottom: 1px solid #eee;
-    }
-}
-
-
-/* Responsive adjustments */
-@media (max-width: 992px) {
-    .visi-misi-grid,
-    .history-layout {
-        grid-template-columns: minmax(0, 1fr);
-    }
-}
-
-@media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
+        border-bottom: 1px solid #f0f0f0;
+        text-align: left;
     }
 
-    .nav-links {
-        margin-top: 10px;
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .nav-links li a {
-        padding: 10px 20px;
-        border-top: 1px solid #eee;
-    }
-
+    /* aturan lain di mobile tetap boleh lanjut di bawah sini */
     .jasa-item {
         flex-basis: 100%;
     }
@@ -922,5 +898,27 @@ footer {
 
     .footer-logo {
         margin-bottom: 12px;
+    }
+
+    .kontak-main {
+        margin-top: 90px;
+        padding-inline: 16px;
+    }
+
+    .kontak-card {
+        flex: 0 0 100%;
+        max-width: 360px;
+    }
+
+    .map-location-wrapper {
+        padding-inline: 8px;
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .visi-misi-grid,
+    .history-layout {
+        grid-template-columns: minmax(0, 1fr);
     }
 }
